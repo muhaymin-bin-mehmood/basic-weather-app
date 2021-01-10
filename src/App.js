@@ -19,8 +19,8 @@ function App() {
   }, [city]);
   return (
     <div className="App">
-      <h1>Weather App</h1>!
-      <h3 id="hello"></h3>
+     <h1>Weather App</h1>
+     <h3 id="hello"></h3>
       {posts ? <p>Weather : {JSON.stringify(posts.weather[0].main)}</p> : 'loading'}
       {posts ? <p>Temperature: {JSON.stringify(posts.main.temp)}</p> : 'loading'}
       {posts ? <p>Humidity: {JSON.stringify(posts.main.humidity)}</p> : 'loading'}
